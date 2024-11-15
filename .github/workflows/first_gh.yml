@@ -2,12 +2,13 @@ name: First Workflow
 on: workflow_dispatch
 jobs:
   First-Job
-  Steps:
-    - name: Print greeting
-      run: echo "Hello World"
-    - name: Print GoodBye
-      run: echo "Done.. End!"
-    - name: Print Multiple Shell Script
-      run: |
-        echo "This is testing of multiple sh script"
-        echo "That's it!"
+    runs-on: ubuntu-latest
+    Steps:
+      - name: Print greeting
+        run: echo "Hello World"
+      - name: Print GoodBye
+        run: echo "Done.. End!"
+      - name: Print Multiple Shell Script
+        run: |
+          echo "This is testing of multiple sh script"
+          echo "That's it!"
